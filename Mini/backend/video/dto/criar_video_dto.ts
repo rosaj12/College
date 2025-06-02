@@ -1,4 +1,9 @@
+import { IsString, IsInt } from 'class-validator';
+
 export class CriarVideoDto {
+  @IsString()
   title: string;
-  owner: number; // ID do usuário
+
+  @IsInt()
+  ownerId: number; // ID do usuário dono do vídeo
 }

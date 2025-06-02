@@ -4,7 +4,9 @@ import { Video } from '../video/video_entity';
 import { Reaction } from '../reaction/reaction_entity';
 import { Comment } from '../comment/comment_entity';
 import { config as loadEnv } from 'dotenv';
+import * as dotenv from 'dotenv';
 
+dotenv.config();
 loadEnv(); // carrega variáveis do .env
 
 export const typeOrmConfig: TypeOrmModuleOptions = {
